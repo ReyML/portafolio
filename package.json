@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "watch": "npx tailwindcss -o dist/tailwind.css --watch --jit --purge='./src/**/*.html'"
+    "watch": "npx tailwindcss -o dist/tailwind.css --watch --jit --purge='./**/*.html'"
   },
   "repository": {
     "type": "git",
