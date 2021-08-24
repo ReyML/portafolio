@@ -1,16 +1,19 @@
 module.exports = {
-  purge: [
-    './**/*.html',
-    './**/*.js'
-  ],
+  purge: {
+    enabled: true,
+    content: [
+      './**/*.html',
+      './**/*.js'
+    ],
+  },
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
-      fontFamily: {
-        'indie-flower': ['Indie Flower', 'cursive'],
-        'open-sans-condensed': ['Open Sans Condensed', 'sans-serif'],
-        'yomogi': ['Yomogi', 'cursive']
-      },
+      /*  fontFamily: {
+         'indie-flower': ['Indie Flower', 'cursive'],
+         'open-sans-condensed': ['Open Sans Condensed', 'sans-serif'],
+         'yomogi': ['Yomogi', 'cursive']
+       }, */
     },
   },
   variants: {
