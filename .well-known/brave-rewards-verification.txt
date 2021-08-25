@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: reyml.com
+Token: 6c0d8d0ddf2261ecdf4e81672236b894bed875545e27018927e7cc2b9fb4e962
