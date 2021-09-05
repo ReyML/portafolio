@@ -9,11 +9,18 @@
     <meta name="description"
         content="Indie maker trying to learn many things at once. I know, I have to focus. My dream is to see this description one day on Google :)">
     <title>Reyml - Reynol Martinez</title>
-    <link rel="stylesheet" href="../dist/tailwind.css">
+    <link rel="stylesheet" href="./dist/tailwind.css">
     <link rel="icon" href="./img/log.jpeg">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-205578145-1">
     </script>
-    <script src="my.js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-205578145-1');
+    </script>
+    <!-- <script src="my.js"></script> -->
     <script type="application/ld+json">
         {
           "@context": "https://schema.org/",
@@ -34,23 +41,23 @@
     </script>
 </head>
 
-<body class="antialised dark:bg-[#151515] select-none">
+<body class="bg-[#151515] select-none">
 
     <main class="mb-20 mt-4 md:flex md:flex-row">
         <section class="flex justify-start flex-wrap flex-col my-14 mx-8 sm:mx-36">
             <h1
-                class="my-6 dark:text-white text-5xl font-extrabold tracking-wider leading-tight md:leading-snug font-sans whitespace-pre-line">
+                class="my-6 text-white text-5xl font-extrabold tracking-wider leading-tight md:leading-snug font-sans whitespace-pre-line">
                 Hello, I'm Reyml.
                 I'm learning JS
             </h1>
-            <div class="block relative ml-4 mr-20 mt-10 dark:border-green-500">
+            <div class="block relative ml-4 mr-20 mt-10 border-green-500">
                 <picture><img src="./img/log.jpeg" alt="a picture for my web" width="100" height="100"
-                        class="rounded-full max-w-md object-cover bg-no-repeat h-32 w-32 border-4 ring-black ring-2 dark:border-white">
+                        class="rounded-full max-w-md object-cover bg-no-repeat h-32 w-32 border-4 ring-black ring-2 border-white">
                 </picture>
             </div>
 
             <p
-                class="select-none mt-16 sm:mt-8 whitespace-pre-line text-left text-base tracking-wide font-medium dark:text-white font-open-sans-condensed">
+                class="select-none mt-16 sm:mt-8 whitespace-pre-line text-left text-base tracking-wide font-medium text-white font-open-sans-condensed">
                 Built
                 with Tailwind
                 and a tiny bit of JavaScript!</p>
@@ -60,21 +67,21 @@
         <div class="flex justify-center flex-col flex-wrap items-center md:w-3/6 md:mr-20 md:mt-20">
 
             <a href="https://reyml.medium.com"
-                class="focus:outline-none dark:hover:bg-[#2E2E31] hover:scale-110 mx-auto w-5/6 dark:bg-[#202022] rounded-sm mt-2 h-24 flex items-center text-center shadow-2xl">
+                class="focus:outline-none hover:bg-[#2E2E31] hover:scale-110 mx-auto w-5/6 bg-[#202022] rounded-sm mt-2 h-24 flex items-center text-center shadow-2xl">
                 <p class="font-sans text-lg uppercase mx-auto text-green-50">Blog</p>
             </a>
             <a href="https://urbanemoji.netlify.app/"
-                class="focus:outline-none dark:hover:bg-[#2E2E31] hover:scale-110 mx-auto w-5/6 dark:bg-[#202022] rounded-sm mt-2 h-24 flex items-center text-center shadow-2xl">
+                class="focus:outline-none hover:bg-[#2E2E31] hover:scale-110 mx-auto w-5/6 bg-[#202022] rounded-sm mt-2 h-24 flex items-center text-center shadow-2xl">
                 <p class="font-sans text-lg uppercase mx-auto text-green-50">Urban Emoji</p>
             </a>
             <a href="mailto:laraveowling@gmail.com"
-                class="focus:outline-none dark:hover:bg-[#2E2E31] hover:scale-110 mx-auto w-5/6 dark:bg-[#202022] rounded-sm mt-2 h-24 flex items-center text-center shadow-2xl">
+                class="focus:outline-none hover:bg-[#2E2E31] hover:scale-110 mx-auto w-5/6 bg-[#202022] rounded-sm mt-2 h-24 flex items-center text-center shadow-2xl">
                 <p class="font-sans text-lg uppercase mx-auto text-green-50">Contact Me</p>
             </a>
         </div>
     </main>
 
-    <footer class="bg-black bottom-0 right-0 left-0 mb-0 w-full dark:bg-black">
+    <footer class="bg-black bottom-0 right-0 left-0 mb-0 w-full">
         <div class="flex justify-center flex-row items-center">
             <div class="flex flex-row justify-evenly items-center h-14 leading-9">
                 <a href="https://github.com/ReyML" class="mx-4" rel="noopener" target="_blank">
@@ -109,13 +116,5 @@
         </div>
     </footer>
 </body>
-
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-205578145-1');
-</script>
 
 </html>
