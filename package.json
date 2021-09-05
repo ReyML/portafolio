@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "watch": "npx tailwindcss -o dist/tailwind.css --watch --jit --purge='./**/*.html'"
+    "watch": "npx tailwindcss -o dist/tailwind.css --watch --jit --purge='./**/*.html'",
+    "build": "NODE_ENV=production npx tailwindcss -o ./dist/tailwind.css --minify"
   },
   "repository": {
     "type": "git",
